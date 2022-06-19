@@ -12,7 +12,7 @@ import java.util.Random;
 
 public class createWallet {
     public static void main(String[] args) throws CipherException, InvalidAlgorithmParameterException, NoSuchAlgorithmException, NoSuchProviderException, IOException {
-        for(int i=0; i<3; i++) {
+        for(int i=0; i<1; i++) {
             String password = new Random().ints(10, 33, 122).collect(StringBuilder::new,
                     StringBuilder::appendCodePoint, StringBuilder::append)
                     .toString();
